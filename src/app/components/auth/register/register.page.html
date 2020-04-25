@@ -1,0 +1,30 @@
+<ion-content color="primary">
+  <form #form="ngForm" (ngSubmit)="register(form)">
+    <ion-grid>
+      <ion-row>
+        <ion-col size-md="6" size-lg="5" size-xs="12">
+          <div class="ion-text-center">
+            <h3>Crea tu cuenta ya !</h3>
+          </div>
+          <div class="ion-padding">
+            <ion-item>
+              <ion-input name="firstName" type="text" placeholder="Nombre" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="lastName" type="text" placeholder="Apellido" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="email" type="email" placeholder="tuEmail@email.com" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="password" type="password" placeholder="Contraseña" ngModel required></ion-input>
+            </ion-item>
+          </div>
+          <div class="ion-padding">
+            <ion-button size="large" type="submit" [disabled]="form.invalid" expand="block">Registrarme</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "splitwise",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
