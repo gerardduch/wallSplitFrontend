@@ -4,6 +4,9 @@
 
 export const environment = {
   production: false,
+  serverConfiguration: {
+    baseUrl: 'http://localhost:3000',
+  },
 };
 
 /*
