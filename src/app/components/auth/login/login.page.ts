@@ -10,11 +10,7 @@ import { AuthenticateResponse } from '../../../../interfaces/authenticate';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-  constructor(
-    private authService: AuthService,
-    private router: Router,
-    private toastService: ToastService,
-  ) {}
+  constructor(private authService: AuthService, private router: Router, private toastService: ToastService) {}
 
   ngOnInit() {}
 

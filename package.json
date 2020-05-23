@@ -1,12 +1,13 @@
 {
   "name": "splitwise",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "Gerard DUCH JONAMA",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "prod:build": "ng build --configuration=\"production\"",
+    "heroku:start": "node server.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -32,6 +33,7 @@
     "@ionic/storage": "^2.2.0",
     "chart.js": "^2.9.3",
     "core-js": "^2.5.4",
+    "express": "^4.17.1",
     "rxjs": "~6.5.1",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
@@ -64,6 +66,5 @@
   },
   "resolutions": {
     "@babel/preset-env": "^7.8.7"
-  },
-  "description": "An Ionic project"
+  }
 }

@@ -10,13 +10,11 @@ const routes: Routes = [
   },
   {
     path: 'register',
-    loadChildren: () =>
-      import('./components/auth/register/register.module').then((m) => m.RegisterPageModule),
+    loadChildren: () => import('./components/auth/register/register.module').then((m) => m.RegisterPageModule),
   },
   {
     path: 'login',
-    loadChildren: () =>
-      import('./components/auth/login/login.module').then((m) => m.LoginPageModule),
+    loadChildren: () => import('./components/auth/login/login.module').then((m) => m.LoginPageModule),
   },
   { path: '**', redirectTo: '' },
 ];
