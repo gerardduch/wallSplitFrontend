@@ -2,11 +2,16 @@
   "name": "splitwise",
   "version": "0.0.1",
   "author": "Gerard DUCH JONAMA",
+  "engines": {
+    "node": "12.16.x",
+    "npm": "6.13.x",
+    "yarn": "1.22.x"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "prod:build": "ng build --configuration=\"production\"",
+    "heroku-postbuild": "ng build --configuration=\"production\"",
     "heroku:start": "node server.js",
     "test": "ng test",
     "lint": "ng lint",

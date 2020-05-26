@@ -45,3 +45,12 @@ git checkout develop
 git merge hotfix_branch
 git branch -D hotfix_branch
 ```
+
+####Merge develop into master
+```
+git checkout develop
+git pull origin develop
+git checkout master
+git merge develop
+git push origin master
+```
